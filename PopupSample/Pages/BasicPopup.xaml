@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<popup:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+                 xmlns:popup="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PopupSample.Pages.BasicPopup">
+  <Label HorizontalTextAlignment="Center" FontSize="Large" Text="Hello basic popup!"></Label>
+</popup:PopupPage>

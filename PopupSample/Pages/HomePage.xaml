@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PopupSample.Pages.HomePage" Title="Popups!">
+  <ScrollView>
+    <StackLayout>
+      <Button Text="Simple" Clicked="SimplePopupClicked"></Button>
+      <Button Text="With style" Clicked="StilizedPopupClicked"></Button>
+      <Grid>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="2*" />
+          <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+          <RowDefinition/>
+          <RowDefinition/>
+          <RowDefinition/>
+          <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" FontSize="Micro" Text="Animation"></Label>
+        <Picker Grid.Row="0" Grid.Column="1" x:Name="AnimationPicker" >
+          <Picker.Items>
+            <x:String>Scale</x:String>
+            <x:String>Move</x:String>
+            <x:String>Fade</x:String>
+          </Picker.Items>
+        </Picker>
+        <Label Grid.Row="1" Grid.Column="0" FontSize="Micro" Text="Background"></Label>
+        <Slider Grid.Row="1" Grid.Column="1" x:Name="TransparencySlider" Maximum="1" Minimum="0"></Slider>
+        <Label Grid.Row="2" Grid.Column="0" FontSize="Micro" Text="Padding"></Label>
+        <Switch Grid.Row="2" Grid.Column="1" x:Name="SystemPaddingSwitch" ></Switch>
+        <Label Grid.Row="3" Grid.Column="0" FontSize="Micro" Text="Close on bg"></Label>
+        <Switch Grid.Row="3" Grid.Column="1" x:Name="CloseOnTapSwitch" ></Switch>
+      </Grid>
+      <Button Text="With properties" Clicked="PropertiedPopupClicked"></Button>
+      <Button Text="Customized animation popup" Clicked="CustomizedAnimationClicked"></Button>
+    </StackLayout>
+  </ScrollView>
+</ContentPage>
